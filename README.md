@@ -1,75 +1,114 @@
-🚀 Project Overview
-Vite Project is a fast and modern web application built with Vue 3, Pinia, and Vite. This project serves as a dynamic management system that features interactive data visualizations, customizable components, and real-time updates. It utilizes powerful libraries like ECharts, Element Plus, and Axios to provide a seamless experience for users.
-With Vite's fast build time and Vue 3’s reactivity, this system ensures high performance and a smooth user interface.
+# PermiVue Management System 🚀
 
-🌱 Key Features
-Interactive Charts: Integrates ECharts for dynamic and beautiful data visualizations 🎨📊.
+A comprehensive management system built with Vue 3 and Element Plus, featuring dynamic routing, state management with Pinia, and visualization with ECharts.
+## 📋 Overview
 
-State Management: Uses Pinia for simple and reactive state management 🔄.
+PermiVue is a management system framework developed with Element Plus components. It provides a compact and efficient user experience with dynamic route permissions, data visualization, centralized state management, and customizable interfaces.
 
-Dynamic Routing: Provides dynamic routing and menus based on user roles 🛠️.
+## ✨ Features
 
-Responsive UI: Built with Element Plus for a modern, fully responsive layout 📱.
+- **🔐 Dynamic Route Permission Control**: User-specific permission schemes without requiring re-login or redirects. Handles 404 for undefined routes.
+- **🗄️ Pinia State Management**: Centralized state management using Pinia combined with LocalStorage persistence.
+- **📊 Data Visualization**: Integration with ECharts for highly effective data visualization capabilities.
+- **🔄 Secondary Axios Encapsulation**: Automatic base URL switching, support for mock/real data, enhanced development reusability.
+- **🎨 UI Framework**: Built on Element Plus for a modern, responsive interface.
 
-Mock API: Utilizes Mock.js to simulate backend data for development 🚀.
+## 🛠️ Tech Stack
 
-LocalStorage Support: Stores user preferences in LocalStorage to persist data between page reloads 🔑.
+- **Frontend Framework**: Vue 3
+- **State Management**: Pinia 3.0
+- **Routing**: Vue Router 4.5
+- **UI Components**: Element Plus 2.9
+- **Styling**: Less
+- **Data Visualization**: ECharts 5.6
+- **HTTP Client**: Axios
+- **Build Tool**: Vite 6.2
+- **Mock Data**: MockJS
 
-Error Handling: Built-in error handling like 404 for unauthenticated users 🚫.
+## 📦 Installation
 
-📦 Installation
-To get started with the project, follow these steps:
+```bash
+# Clone the repository
+git clone https://github.com/ContinueHY/Vue3-Vite_Management.git
 
-Clone the repository:
-git clone https://github.com/yourusername/vite-project.git
-cd vite-project
+# Navigate to project directory
+cd Vue3-Vite_Management
 
-Install dependencies:
+# Install dependencies
 npm install
 
-Run the development server:
+# Start development server
 npm run dev
+```
 
-Build the project for production:
-npm run build
+## 📥 Dependencies
 
-🛠️ Dependencies
-Core Dependencies:
-Vue 3: The framework used to build the frontend 🖥️.
+```json
+{
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "echarts": "^5.6.0",
+    "element-plus": "^2.9.6",
+    "less": "^4.2.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "axios": "^1.8.4",
+    "mockjs": "^1.1.0",
+    "pinia": "^3.0.1",
+    "vite": "^6.2.0"
+  }
+}
+```
 
-Element Plus: A UI library for customizable components 🎨.
+## 🚀 Scripts
 
-ECharts: A powerful charting library for visualizing data 📊.
+- **Development**: `npm run dev`
+- **Build**: `npm run build`
+- **Preview**: `npm run preview`
 
-Vue Router: Handles routing within the app 🔄.
+## 🌟 Highlights
 
-Axios: Used to make HTTP requests 💻.
+1. **🔑 Permission System**
+   - Role-based access control
+   - Dynamic route generation
+   - No page refresh required when permissions change
 
-Less: A CSS pre-processor for styling 🖍️.
+2. **📱 Responsive Design**
+   - Mobile-friendly interface
+   - Adaptive layout for different screen sizes
 
-Dev Dependencies:
-Pinia: State management library 🏞️.
+3. **🔧 Customization**
+   - Extensible component structure
+   - Configurable themes and styles
 
-Vite: Build tool and development server ⚡.
+4. **⚡ Performance Optimized**
+   - Fast loading times
+   - Efficient state management
+   - Optimized rendering
 
-Mock.js: Mock data generator for simulating backend responses 🧪.
+## 📁 Project Structure
 
-🚀 Highlights
-Fast Performance: Powered by Vite, your development experience will be lightning-fast ⚡.
-
-Vue 3: Enjoy the reactivity and flexibility of Vue 3 for a modern frontend experience 🖥️.
-
-Scalable and Flexible: With Pinia for state management, you can easily scale your app with minimal overhead 📈.
-
-Beautiful Data Visualizations: Use ECharts to create custom charts that suit your needs 🎨.
-
-Responsive Design: Built with Element Plus, the UI is fully responsive and mobile-friendly 📱.
-
-🎨 Fun Facts
-Developed with ❤️ to create modern, performant, and user-friendly web applications.
-
-Enjoy using Vite for its incredibly fast hot module replacement during development ⚡🔥.
-
-🤖 Contributing
-Feel free to fork this repo and submit pull requests for improvements! We're happy to accept any suggestions or contributions to make this project better 🙌
-
+```
+PermiVue/
+├── public/
+├── src/
+│   ├── api/           # API requests
+│   ├── assets/        # Static assets
+│   ├── components/    # Global components
+│   ├── layouts/       # Layout components
+│   ├── router/        # Routes configuration
+│   ├── store/         # Pinia store modules
+│   ├── styles/        # Global styles
+│   ├── utils/         # Utility functions
+│   ├── views/         # Page components
+│   ├── App.vue        # Root component
+│   └── main.js        # Application entry point
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+```
